@@ -4,7 +4,9 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:own_notify/own_notify.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  OwnNotify().initialize(debug: true);
   runApp(const MyApp());
 }
 
@@ -30,8 +32,9 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion =
-          await OwnNotify.platformVersion ?? 'Unknown platform version';
+     /* platformVersion =
+          await OwnNotify. ?? 'Unknown platform version';*/
+      _platformVersion = await OwnNotify().platformVersion ?? "unknowm platform version: main.dart";
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -42,9 +45,20 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      platformVersion = _platformVersion;
     });
   }
+
+  Future<void> _showNotification() async{
+    bool result;
+    try{
+      OwnNotify().createNotification();
+
+    }on PlatformException {
+      result = false;
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -53,10 +67,26 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("dsf", textAlign: TextAlign.center,),
+              ElevatedButton(onPressed: (){
+                _showNotification();
+              }, child: Text("show Notification"))
+            ],
+          ),
         ),
+        // body: Center(
+        //   child: Text('Running on: $_platformVersion\n'),
+        // ),
       ),
     );
   }
 }
+
+
