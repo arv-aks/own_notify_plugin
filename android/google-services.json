@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "357967084786",
+    "firebase_url": "https://osunio-dev-default-rtdb.firebaseio.com",
+    "project_id": "osunio-dev",
+    "storage_bucket": "osunio-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357967084786:android:979985e9621d78ee63a46b",
+        "android_client_info": {
+          "package_name": "com.liberin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357967084786-5n0420qct1btfcfuocugs7f19d8uua81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl6I6wi7NOKUqpFVu_iFsqgKLNo-EVXZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357967084786-5n0420qct1btfcfuocugs7f19d8uua81.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357967084786-c1ipj6k2l8gposn4usc15lqkvtv3dgsf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.liberin.osunio"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357967084786:android:09cf0b5873835c2163a46b",
+        "android_client_info": {
+          "package_name": "com.osunio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357967084786-9qtk1g1s5m9kru5e9u11pvbndirpddsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.osunio",
+            "certificate_hash": "b62ef56f8b14ec076e414a7e6f91610462f222fd"
+          }
+        },
+        {
+          "client_id": "357967084786-5n0420qct1btfcfuocugs7f19d8uua81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl6I6wi7NOKUqpFVu_iFsqgKLNo-EVXZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357967084786-5n0420qct1btfcfuocugs7f19d8uua81.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357967084786-c1ipj6k2l8gposn4usc15lqkvtv3dgsf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.liberin.osunio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
